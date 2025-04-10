@@ -38,9 +38,9 @@ describe('NASA Mars Rover Photos', () => {
             cy.wrap(img).should('be.visible').and('have.attr', 'src');
           });
   
-          const title = doc.createElement('h2');
-          title.textContent = `Fotos do Rover Curiosity (${earthDate}) - Câmera: ${camera}`;
-          title.style.textAlign = 'center';
+          const title = doc.createElement('h3');
+          title.textContent = `Fotos Rover Curiosity (${earthDate}) - Câmera: ${camera}`;
+          title.style.textAlign = 'left';
           title.style.fontFamily = 'Arial, sans-serif';
           doc.body.prepend(title);
         });
